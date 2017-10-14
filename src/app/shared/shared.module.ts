@@ -1,9 +1,11 @@
+import { HeaderComponent } from './layout/header/header.component';
 import { ShowAuthedDirective } from './directive/show-authed.directive';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @NgModule({
     imports: [
@@ -14,7 +16,9 @@ import { RouterModule } from '@angular/router';
         RouterModule
     ],
     declarations: [
-        ShowAuthedDirective
+        ShowAuthedDirective,
+        FooterComponent,
+        HeaderComponent
     ],
     exports: [
         ShowAuthedDirective,
@@ -22,7 +26,9 @@ import { RouterModule } from '@angular/router';
         HttpModule,
         FormsModule,
         ReactiveFormsModule,
-        CommonModule
+        CommonModule,
+        HeaderComponent,
+        FooterComponent
     ]
 })
 export class SharedModule {
