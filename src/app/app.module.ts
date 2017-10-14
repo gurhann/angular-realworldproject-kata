@@ -1,3 +1,4 @@
+import { AuthModule } from './auth/auth.module';
 import { RouterModule } from '@angular/router';
 import { ApiService } from './shared/service/api.service';
 import { JwtService } from './shared/service/jwt.service';
@@ -17,7 +18,8 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([], { useHash: tru
   imports: [
     BrowserModule,
     SharedModule,
-    rootRouting
+    rootRouting,
+    AuthModule
   ],
   providers: [
     UserService,

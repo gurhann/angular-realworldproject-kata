@@ -30,7 +30,8 @@ import { ListErrorsComponent } from './layout/list-errors/list-errors.component'
         ReactiveFormsModule,
         CommonModule,
         HeaderComponent,
-        FooterComponent
+        FooterComponent,
+        ListErrorsComponent
     ]
 })
 export class SharedModule {
