@@ -8,14 +8,14 @@ import {
 } from '@angular/core';
 
 @Directive({
-  selector: '[appShowAuthed]'
+  selector: '[showAuthed]'
 })
 export class ShowAuthedDirective implements OnInit {
 
   constructor(
     private templateRef: TemplateRef<any>,
-    private viewContainer: ViewContainerRef,
-    private userService: UserService
+    private userService: UserService,
+    private viewContainer: ViewContainerRef
   ) { }
 
   condition: boolean;
