@@ -6,6 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from './layout/footer/footer.component';
+import { ListErrorsComponent } from './layout/list-errors/list-errors.component';
 
 @NgModule({
     imports: [
@@ -18,7 +19,8 @@ import { FooterComponent } from './layout/footer/footer.component';
     declarations: [
         ShowAuthedDirective,
         FooterComponent,
-        HeaderComponent
+        HeaderComponent,
+        ListErrorsComponent
     ],
     exports: [
         ShowAuthedDirective,
