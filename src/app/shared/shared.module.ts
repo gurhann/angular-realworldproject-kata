@@ -1,3 +1,4 @@
+import { AuthGuard } from './service/auth-guard.service';
 import { HeaderComponent } from './layout/header/header.component';
 import { ShowAuthedDirective } from './directive/show-authed.directive';
 import { CommonModule } from '@angular/common';
@@ -32,7 +33,8 @@ import { ListErrorsComponent } from './layout/list-errors/list-errors.component'
         HeaderComponent,
         FooterComponent,
         ListErrorsComponent
-    ]
+    ],
+    providers: [AuthGuard]
 })
 export class SharedModule {
 
