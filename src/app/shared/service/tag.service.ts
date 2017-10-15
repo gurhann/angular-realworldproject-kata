@@ -9,7 +9,7 @@ export class TagService {
     private apiService: ApiService
   ) { }
 
-  getAll(): Observable<string> {
+  getAll(): Observable<[string]> {
     return this.apiService.get("/tags")
       .map(data => data.tags);
   }
